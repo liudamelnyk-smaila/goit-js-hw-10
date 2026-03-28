@@ -16,3 +16,112 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fafafa;
+  color: #2e2f42;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1128px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 24px;
+  color: #4e75ff;
+}
+
+.nav-list {
+  display: flex;
+  gap: 20px;
+  padding-left: 0;
+  list-style: none;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  background-color: #4e75ff;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover:not(:disabled) {
+  background-color: #6c8cff;
+}
+
+button:disabled {
+  background-color: #cfcfcf;
+  cursor: not-allowed;
+}
+
+input {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 16px;
+}
+
+.timer {
+  display: flex;
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.value {
+  font-size: 40px;
+  line-height: 1.2;
+}
+
+.label {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.form {
+  max-width: 360px;
+}
+
+.form-label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+fieldset {
+  margin: 0 0 16px;
+  padding: 16px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+}
+
+fieldset label {
+  display: block;
+}
+
+fieldset label:not(:last-child) {
+  margin-bottom: 8px;
+}
